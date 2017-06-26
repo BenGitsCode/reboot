@@ -4,6 +4,10 @@ import moduleForAcceptance from 'bengitscode-portfolio/tests/helpers/module-for-
 moduleForAcceptance('Acceptance | portfolio');
 
 test('should show projects as the home page', function (assert) {
+  visit('/');
+  andThen(function() {
+    assert.equal(currentURL(), '/projects', 'should redirect automatically')
+  });
 });
 
 test('should link to deployed project.', function (assert) {
