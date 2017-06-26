@@ -10,7 +10,12 @@ test('should show projects as the home page', function (assert) {
   });
 });
 
-test('should link to deployed project.', function (assert) {
+test('should link to About me.', function (assert) {
+  visit('/');
+  click('a:contains("About")');
+  andThen(function() {
+    assert.equal(currentURL(), '/about', 'should nagivate to about')
+  })
 });
 
 test('should link to contact information.', function (assert) {
