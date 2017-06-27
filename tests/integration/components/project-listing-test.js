@@ -19,10 +19,13 @@ moduleForComponent('project-listing', 'Integration | Component | project listing
 
 test('should display project details', function (assert) {
   this.set('projectObj', project)
-  this.render(hbs`{{rental-listing rental=rentalObj}}`)
+  this.render(hbs`{{project-listing project=projectObj}}`)
+  assert.equal(this.$('.listing h3').text(), 'test-title')
+  assert.equal(this.$('.listing .title').text().trim(), 'Title: test-title')
+
 });
 
-test('should toggle wide class on click', function (asser) {
+test('should toggle wide class on click', function (assert) {
   this.set('projectObj', project)
   this.render(hbs`{{project-listing project=projectObj}}`)
 })
