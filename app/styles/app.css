@@ -4,7 +4,7 @@
  * Base Elements
  */
 
-* {
+/** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ span,
 a {
   font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   line-height: 1.5;
-}
+}*/
 
 body {
   background: #f3f3f3;
@@ -70,7 +70,7 @@ p {
 /**
  * Top Navigation
  */
-.menu {
+/*.menu {
   height: 4em;
   background-color: #677ae4;
   background-color: #05526A;
@@ -161,9 +161,9 @@ p {
 /**
  * Content Area
  */
-.body {
+/*.body {
   padding: 15px;
-}
+}*/
 
 /**
  * Similar to Jumbotron
@@ -273,7 +273,7 @@ p {
 /**
  * Utilities
  */
-.light {
+/*.light {
   font-weight: 300;
 }
 
@@ -291,7 +291,7 @@ p {
 
 .relative {
   position: relative;
-}
+}*/
 
 .tomster {
     background: url(http://emberjs.com/images/tomsters/teaching.png);
