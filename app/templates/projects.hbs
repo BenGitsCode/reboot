@@ -8,20 +8,5 @@
 </div>
 
 {{#each model as |project| }}
-  <article class="project-list">
-    <h3>{{project.title}}</h3>
-    <div class="detail title">
-      <span>Title:</span> {{project.title}}
-    </div>
-    <div class="detail type">
-      <span>Type:</span> {{project.type}}
-    </div>
-    <div class="detail description">
-      <span>Description:</span> {{project.description}}
-    </div>
-    <div class="detail image">
-      <span>Title:</span> {{project.image}}
-    </div>
-  </article>
-
+  {{project-listing project=project}}
 {{/each}}
