@@ -1,5 +1,5 @@
-<article class="project-listing">
-  <a class="image">
+<article class="listing">
+  <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
     <img src="{{project.image}}" alt="" >
     <small>View Larger</small>
   </a>
