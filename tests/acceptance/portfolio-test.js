@@ -27,6 +27,10 @@ test('should link to contact information.', function (assert) {
 });
 
 test('should list all projects.', function (assert) {
+visit('/')
+andThen(function() {
+  assert.equal(find('.project-list').length, 4, 'should see 3 listings')
+  })
 });
 
 test('should show details for a selected project', function (assert) {
