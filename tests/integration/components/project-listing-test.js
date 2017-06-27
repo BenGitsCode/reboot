@@ -19,8 +19,10 @@ moduleForComponent('project-listing', 'Integration | Component | project listing
 
 test('should display project details', function (assert) {
   this.set('projectObj', project)
+  this.render(hbs`{{rental-listing rental=rentalObj}}`)
 });
 
 test('should toggle wide class on click', function (asser) {
   this.set('projectObj', project)
+  this.render(hbs`{{project-listing project=projectObj}}`)
 })
